@@ -21,7 +21,7 @@ jobs:
         setup-command: ''
         command: make test try=printArray
         timeout: 10
-        max-score: 1
+        max-score: 30
     - name: replaceVariable
       id: replacevariable
       uses: classroom-resources/autograding-command-grader@v1
@@ -30,7 +30,7 @@ jobs:
         setup-command: ''
         command: make test try=replaceVariable
         timeout: 10
-        max-score: 1
+        max-score: 30
     - name: sumOdds
       id: sumodds
       uses: classroom-resources/autograding-command-grader@v1
@@ -39,7 +39,7 @@ jobs:
         setup-command: ''
         command: make test try=sumOdds
         timeout: 10
-        max-score: 1
+        max-score: 40
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
